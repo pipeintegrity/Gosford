@@ -1,5 +1,5 @@
 ---
-title: "Grade Prediction Report: Gosferd Rd Meter & Regulator Station"
+title: "Grade Prediction Report: Gosford Rd Meter & Regulator Station"
 date: "`r format(Sys.time(), '%B %d, %Y')`" 
 execute:
   echo: false
@@ -40,7 +40,7 @@ numb <- length(unique(rs$joint))
 
 # Executive Summary {-}
 
-The `r english(numb)` pipe joints from Gosferd Rd Meter & Regulator Station had chemical composition testing completed using non-destructive examination (NDE) and the information was supplied to RSI Pipeline Solutions to predict the most probable grade.The chemical composition data was used in a machine learning model that was trained on an aggregated composition dataset from various third parties as well as the Pacific Gas and Electric Company (PG&E) to predict grade.
+The `r english(numb)` pipe joints from Gosford Rd Meter & Regulator Station had chemical composition testing completed using non-destructive examination (NDE) and the information was supplied to RSI Pipeline Solutions to predict the most probable grade.The chemical composition data was used in a machine learning model that was trained on an aggregated composition dataset from various third parties as well as the Pacific Gas and Electric Company (PG&E) to predict grade.
 
 Several methods of NDE chemical composition testing were used including filings collection followed by laboratory analysis (Filings) and laser-induced breakdown spectroscopy (LIBS) combined with X-ray fluorescence (XRF). For joints that had filings data available, the filings data were used for grade predictions, otherwise the LIBS/XRF data were used. The predicted grade for all the joints is Grade X42 based on mean probability or percentage of cases. 
 
@@ -538,7 +538,7 @@ flextable(pw) %>%
 
 ## Boxplots of Probabilities
 
-Boxplots are a visual aid that demonstrates not just the range of values but where the majority of the data is concentrated. Boxplots consist of four parts. The "box" portion is called the inner quartile range (IQR), which starts at the end of the first through the third quartile of the data where the most of the data resides. The line through the middle of the box is the median value. The lines extending out from the box continue to the last data point that is less than or equal to 1.5 times the IQR from the box. Anything that is further than 1.5 times the IQR is considered an outlier and each of the data points that meet that criteria are plotted as a single point. As shown in @fig-boxplots, all of the grade predictions were strongly X42 no other grades had significant probabilities within the IQR relative to that.
+Boxplots are a visual aid that demonstrates not just the range of values but where the majority of the data is concentrated. Boxplots consist of four parts. The "box" portion is called the inner quartile range (IQR), which starts at the end of the first through the third quartile of the data where the most of the data resides. The line through the middle of the box is the median value. The lines extending out from the box continue to the last data point that is less than or equal to 1.5 times the IQR from the box. Anything that is further than 1.5 times the IQR is considered an outlier and each of the data points that meet that criteria are plotted as a single point. As shown in @fig-boxplots, all of the highest probability grade predictions were X42, no other grades had significant probabilities within the IQR relative to it.
 
 ```{r}
 #| label: fig-boxplots
@@ -572,7 +572,7 @@ rs %>%
 
 # Conclusion
 
-For the `r english(numb)` joints analyzed at the Gosferd Rd Station, the predicted grade for all the joints is Grade X42 based on mean probability or percentage of cases. 
+For the `r english(numb)` joints analyzed at the Gosford Rd Station, the predicted grade for all the joints is Grade X42 based on mean probability or percentage of cases. 
 
 ```{r}
 #| label: tbl-results_con
@@ -593,9 +593,9 @@ PG&E will make the final determination of the pipe grade to use in downstream an
 
 # References
 
-1.  Pacific Gas & Electric Co. (PG&E) Facility Integrity Management Program (FIMP) Risk, "Pipe Nominal Wall Thickness Report: Gosferd Rd Meter and Regulator Station," November 7, 2022.
+1.  Pacific Gas & Electric Co. (PG&E) Facility Integrity Management Program (FIMP) Risk, "Pipe Nominal Wall Thickness Report: Gosford Rd Meter and Regulator Station," November 7, 2022.
 
-2.  Exponent, Inc., "Gosferd Rd Chemical Composition Results and Analysis," XXXXXX XX, 2022 (Report No. 2202872.000-XXXX).
+2.  Exponent, Inc., "Gosford Rd Chemical Composition Results and Analysis," January 26, 2023 (Report No. 2202872.000-2084).
 
-3. 
+3. Version Control: Gosford.git
 
